@@ -1,0 +1,31 @@
+/* .container
+.btn-container 
+.board-container
+.board-item */
+* {
+  box-sizing: border-box;
+}
+/* .container,
+.btn-container,
+.board-container,
+.board-item {
+  border: 1px solid black;
+} */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.board-container {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-top: 30px;
+}
+.board-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
