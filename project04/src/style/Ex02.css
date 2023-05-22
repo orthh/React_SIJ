@@ -1,0 +1,40 @@
+.menu-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.menu-container > div {
+  flex-basis: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  border: 3px solid pink;
+  padding: 10px;
+}
+.menuitem {
+  position: relative;
+  width: 200px;
+  padding: 20px;
+  top: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
+.menuitem:hover {
+  top: 20px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.menuitem > p > span:first-child {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.menuitem > p > span:last-child {
+  display: block;
+}

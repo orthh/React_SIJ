@@ -64,9 +64,9 @@ const Ex04 = () => {
       <div className="board-container">
         <Board user="나" path={getPath(myNum)} score={myScore} />
         <Board user="컴퓨터" path={getPath(comNum)} score={comScore} />
+        {myScore >= 5 && (uWin(), reset())}
+        {comScore >= 5 && (cWin(), reset())}
       </div>
-      <span className="temp">{myScore >= 5 && (uWin(), reset())}</span>
-      <span className="temp">{comScore >= 5 && (cWin(), reset())}</span>
     </div>
   );
 };
