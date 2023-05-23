@@ -3,6 +3,7 @@ import Ex03Header from "./components/Ex03Header";
 import { Ex03Main } from "./components/Ex03Main";
 import { useState } from "react";
 import { DarkContext } from "./context/Ex03DarkContext";
+import "./style/Ex03.css";
 
 const Ex03 = () => {
   /*
@@ -16,6 +17,7 @@ const Ex03 = () => {
   const style = {
     color: isDark ? "white" : "black",
     backgroundColor: isDark ? "black" : "white",
+    borderBottom: isDark ? "1px solid white" : "1px solid black",
   };
 
   return (

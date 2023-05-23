@@ -1,3 +1,21 @@
 * {
   box-sizing: border-box;
 }
+.ex03 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.ex03header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ex03main {
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
