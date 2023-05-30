@@ -26,7 +26,7 @@ const Ex05 = () => {
       .then((res) => {
         console.log("res", res.data.main.temp);
 
-        // 온도 세팅 : 켈비온도 - 273 = 섭씨온도
+        // 온도 세팅 : 켈빈온도 - 273 = 섭씨온도
         setTemp((res.data.main.temp - 273).toFixed(2));
 
         // 구름 세팅
