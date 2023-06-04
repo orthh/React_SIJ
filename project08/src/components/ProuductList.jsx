@@ -12,6 +12,7 @@ const ProuductList = ({ list, setList }) => {
       => map 함수, props 처리 (index 값도 )
   
   */
+
   const getData = () => {
     axios.get("/bestList.json").then((res) => setList(res.data.list));
   };
