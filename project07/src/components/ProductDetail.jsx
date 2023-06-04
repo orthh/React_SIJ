@@ -18,6 +18,7 @@ const ProductDetail = () => {
 
   */
   let { num } = useParams();
+
   console.log("게시물 번호 : ", num);
 
   /*

@@ -87,4 +87,5 @@
   padding: 3%;
   box-sizing: border-box;
   overflow: hidden;
+  cursor: pointer;
 }
