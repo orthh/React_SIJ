@@ -6,6 +6,7 @@ import Main from "./components/Main";
 import ProuductList from "./components/ProuductList";
 import ProductDetail from "./components/ProductDetail.jsx";
 import { useState } from "react";
+import Storage from "./components/Storage";
 
 function App() {
   /* 
@@ -29,17 +30,20 @@ function App() {
   return (
     <div className="container">
       <Header />
+
       <Routes>
         <Route path="/" element={<Main />}></Route>
         <Route
-          path="/productlist"
+          path="/list"
           element={<ProuductList list={list} setList={setList} />}
         ></Route>
         <Route
-          path="/productDetail/:num"
-          element={<ProductDetail list={list} setList={setList} />}
+          path="/detail/:num"
+          element={<ProductDetail list={list} />}
         ></Route>
+        <Route path="/storage" element={<Storage />}></Route>
       </Routes>
+
       <Footer />
     </div>
   );

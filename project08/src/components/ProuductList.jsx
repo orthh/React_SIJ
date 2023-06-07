@@ -14,15 +14,24 @@ const ProuductList = ({ list, setList }) => {
   */
 
   const getData = () => {
-    axios.get("/bestList.json").then((res) => setList(res.data.list));
+    axios
+      .get("http://localhost:3000/bestList.json")
+      .then((res) => setList(res.data.list));
   };
+  // const getData = async () => {
+  //   let url = "http://localhost:3000/bestList.json";
+  //   let res = await axios.get(url);
+  //   console.log(res.data.list);
+  //   setList(res.data.list);
+  // };
+
   useEffect(() => {
     getData();
   }, []);
   return (
     <div className="list-container">
-      {list.map((elem) => (
-        <ProductItem item={elem} key={elem.no} />
+      {list.map((item) => (
+        <ProductItem item={item} key={item.no} />
       ))}
     </div>
   );

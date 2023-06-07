@@ -11,11 +11,12 @@ const Header = () => {
   return (
     <div className="header-container">
       <div className="link-container">
-        <Link to="/">로고</Link>
+        <Link to="/">HYEOK</Link>
       </div>
       <div className="link-container">
-        <Link to="/">메인창</Link>
-        <Link to="/productlist">목록</Link>
+        <Link to="/list">목록</Link>
+        {"   "}
+        <Link to="/storage">저장소</Link>
       </div>
       <div className="link-container">로그인</div>
     </div>

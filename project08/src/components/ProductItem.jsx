@@ -8,7 +8,7 @@ const ProductItem = ({ item }) => {
       => 상품별로 고유번호 '/detail/1', 'detail/2'
   */
   const nav = useNavigate();
-  const goDetail = () => nav(`/productDetail/${item.no}`);
+  const goDetail = () => nav(`/detail/${item.no}`);
   return (
     <div className="product-container" onClick={goDetail}>
       <img width="100px" alt="" src={item.src} />
